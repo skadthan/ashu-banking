@@ -1,5 +1,6 @@
-FROM java:8 
+#FROM java:8 
 #FROM openjdk
+FROM openjdk:8
 FROM maven
 
 ## Install maven
