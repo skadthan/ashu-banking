@@ -74,7 +74,8 @@ pipeline {
                 sh 'docker stop ashu-banking || true && docker rm ashu-banking || true'
             //  Commented as MySQL is replaced by H2
             //  sh 'docker run --detach --name=ashu-banking -p 8800:8800 --link bankmysql:localhost -t skadthan/ashu-banking:1'
-                sh 'docker run --detach --name=ashu-banking -p 8800:8800 skadthan/ashu-banking:1'
+            //  sh 'docker run --detach --name=ashu-banking -p 8800:8800 skadthan/ashu-banking:1'
+		sh "docker container run  --name ashu-banking -p 8800:8800 skadthan/ashu-banking:1"
             }
         }
     }
