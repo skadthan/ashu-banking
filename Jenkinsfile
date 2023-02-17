@@ -1,10 +1,11 @@
 pipeline {
     agent any
-    parameters {
+  /*  parameters {
         string(name: 'MYSQL_ROOT_PASSWORD', defaultValue: 'root', description: 'MySQL password')
         string(name: 'DOCKER_USER', defaultValue: '', description: 'User ID of the Dockerhub')
         string(name: 'DOCKER_TOKEN', defaultValue: '', description: 'Token to upload docker image to dockerhub')
-    }
+    } 
+    */
     stages {
         stage ("Initialize Jenkins Env") {
          steps {
