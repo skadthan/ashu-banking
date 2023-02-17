@@ -1,0 +1,373 @@
+{
+  "data" : {
+    "pairs" : [ {
+      "request" : {
+        "path" : [ {
+          "matcher" : "exact",
+          "value" : "/audit/deposit/1000.0"
+        } ],
+        "method" : [ {
+          "matcher" : "exact",
+          "value" : "GET"
+        } ],
+        "destination" : [ {
+          "matcher" : "exact",
+          "value" : "localhost:6001"
+        } ],
+        "scheme" : [ {
+          "matcher" : "exact",
+          "value" : "http"
+        } ],
+        "body" : [ {
+          "matcher" : "exact",
+          "value" : ""
+        } ]
+      },
+      "response" : {
+        "status" : 200,
+        "body" : "deposit failed",
+        "encodedBody" : false,
+        "templated" : false,
+        "headers" : {
+          "Content-Disposition" : [ "inline;filename=f.txt" ],
+          "Content-Length" : [ "14" ],
+          "Content-Type" : [ "text/plain;charset=UTF-8" ],
+          "Date" : [ "Wed, 18 Dec 2019 06:15:17 GMT" ],
+          "Hoverfly" : [ "Was-Here" ]
+        }
+      }
+    }, {
+      "request" : {
+        "path" : [ {
+          "matcher" : "exact",
+          "value" : "/audit/withdraw/500.0"
+        } ],
+        "method" : [ {
+          "matcher" : "exact",
+          "value" : "GET"
+        } ],
+        "destination" : [ {
+          "matcher" : "exact",
+          "value" : "localhost:6001"
+        } ],
+        "scheme" : [ {
+          "matcher" : "exact",
+          "value" : "http"
+        } ],
+        "body" : [ {
+          "matcher" : "exact",
+          "value" : ""
+        } ]
+      },
+      "response" : {
+        "status" : 200,
+        "body" : "withdraw failed",
+        "encodedBody" : false,
+        "templated" : false,
+        "headers" : {
+          "Content-Disposition" : [ "inline;filename=f.txt" ],
+          "Content-Length" : [ "15" ],
+          "Content-Type" : [ "text/plain;charset=UTF-8" ],
+          "Date" : [ "Wed, 18 Dec 2019 06:15:17 GMT" ],
+          "Hoverfly" : [ "Was-Here" ]
+        }
+      }
+    }, {
+      "request" : {
+        "path" : [ {
+          "matcher" : "exact",
+          "value" : "/audit/deposit/1000000.0"
+        } ],
+        "method" : [ {
+          "matcher" : "exact",
+          "value" : "GET"
+        } ],
+        "destination" : [ {
+          "matcher" : "exact",
+          "value" : "localhost:6001"
+        } ],
+        "scheme" : [ {
+          "matcher" : "exact",
+          "value" : "http"
+        } ],
+        "body" : [ {
+          "matcher" : "exact",
+          "value" : ""
+        } ]
+      },
+      "response" : {
+        "status" : 200,
+        "body" : "deposit success",
+        "encodedBody" : false,
+        "templated" : false,
+        "headers" : {
+          "Content-Disposition" : [ "inline;filename=f.txt" ],
+          "Content-Length" : [ "15" ],
+          "Content-Type" : [ "text/plain;charset=UTF-8" ],
+          "Date" : [ "Wed, 18 Dec 2019 06:15:17 GMT" ],
+          "Hoverfly" : [ "Was-Here" ]
+        }
+      }
+    }, {
+      "request" : {
+        "path" : [ {
+          "matcher" : "exact",
+          "value" : "/audit/withdraw/0.0"
+        } ],
+        "method" : [ {
+          "matcher" : "exact",
+          "value" : "GET"
+        } ],
+        "destination" : [ {
+          "matcher" : "exact",
+          "value" : "localhost:6001"
+        } ],
+        "scheme" : [ {
+          "matcher" : "exact",
+          "value" : "http"
+        } ],
+        "body" : [ {
+          "matcher" : "exact",
+          "value" : ""
+        } ]
+      },
+      "response" : {
+        "status" : 200,
+        "body" : "withdraw failed",
+        "encodedBody" : false,
+        "templated" : false,
+        "headers" : {
+          "Content-Disposition" : [ "inline;filename=f.txt" ],
+          "Content-Length" : [ "15" ],
+          "Content-Type" : [ "text/plain;charset=UTF-8" ],
+          "Date" : [ "Wed, 18 Dec 2019 06:15:17 GMT" ],
+          "Hoverfly" : [ "Was-Here" ]
+        }
+      }
+    }, {
+      "request" : {
+        "path" : [ {
+          "matcher" : "exact",
+          "value" : "/audit/withdraw/5000.0"
+        } ],
+        "method" : [ {
+          "matcher" : "exact",
+          "value" : "GET"
+        } ],
+        "destination" : [ {
+          "matcher" : "exact",
+          "value" : "localhost:6001"
+        } ],
+        "scheme" : [ {
+          "matcher" : "exact",
+          "value" : "http"
+        } ],
+        "body" : [ {
+          "matcher" : "exact",
+          "value" : ""
+        } ]
+      },
+      "response" : {
+        "status" : 200,
+        "body" : "withdraw success",
+        "encodedBody" : false,
+        "templated" : false,
+        "headers" : {
+          "Content-Disposition" : [ "inline;filename=f.txt" ],
+          "Content-Length" : [ "16" ],
+          "Content-Type" : [ "text/plain;charset=UTF-8" ],
+          "Date" : [ "Wed, 18 Dec 2019 06:15:18 GMT" ],
+          "Hoverfly" : [ "Was-Here" ]
+        }
+      }
+    }, {
+      "request" : {
+        "path" : [ {
+          "matcher" : "exact",
+          "value" : "/audit/deposit/0.0"
+        } ],
+        "method" : [ {
+          "matcher" : "exact",
+          "value" : "GET"
+        } ],
+        "destination" : [ {
+          "matcher" : "exact",
+          "value" : "localhost:6001"
+        } ],
+        "scheme" : [ {
+          "matcher" : "exact",
+          "value" : "http"
+        } ],
+        "body" : [ {
+          "matcher" : "exact",
+          "value" : ""
+        } ]
+      },
+      "response" : {
+        "status" : 200,
+        "body" : "deposit failed",
+        "encodedBody" : false,
+        "templated" : false,
+        "headers" : {
+          "Content-Disposition" : [ "inline;filename=f.txt" ],
+          "Content-Length" : [ "14" ],
+          "Content-Type" : [ "text/plain;charset=UTF-8" ],
+          "Date" : [ "Wed, 18 Dec 2019 06:15:18 GMT" ],
+          "Hoverfly" : [ "Was-Here" ]
+        }
+      }
+    }, {
+      "request" : {
+        "path" : [ {
+          "matcher" : "exact",
+          "value" : "/audit/withdraw/998200.0"
+        } ],
+        "method" : [ {
+          "matcher" : "exact",
+          "value" : "GET"
+        } ],
+        "destination" : [ {
+          "matcher" : "exact",
+          "value" : "localhost:6001"
+        } ],
+        "scheme" : [ {
+          "matcher" : "exact",
+          "value" : "http"
+        } ],
+        "body" : [ {
+          "matcher" : "exact",
+          "value" : ""
+        } ]
+      },
+      "response" : {
+        "status" : 200,
+        "body" : "withdraw success",
+        "encodedBody" : false,
+        "templated" : false,
+        "headers" : {
+          "Content-Disposition" : [ "inline;filename=f.txt" ],
+          "Content-Length" : [ "16" ],
+          "Content-Type" : [ "text/plain;charset=UTF-8" ],
+          "Date" : [ "Wed, 18 Dec 2019 06:15:18 GMT" ],
+          "Hoverfly" : [ "Was-Here" ]
+        }
+      }
+    }, {
+      "request" : {
+        "path" : [ {
+          "matcher" : "exact",
+          "value" : "/audit/deposit/1.0E15"
+        } ],
+        "method" : [ {
+          "matcher" : "exact",
+          "value" : "GET"
+        } ],
+        "destination" : [ {
+          "matcher" : "exact",
+          "value" : "localhost:6001"
+        } ],
+        "scheme" : [ {
+          "matcher" : "exact",
+          "value" : "http"
+        } ],
+        "body" : [ {
+          "matcher" : "exact",
+          "value" : ""
+        } ]
+      },
+      "response" : {
+        "status" : 200,
+        "body" : "deposit failed",
+        "encodedBody" : false,
+        "templated" : false,
+        "headers" : {
+          "Content-Disposition" : [ "inline;filename=f.txt" ],
+          "Content-Length" : [ "14" ],
+          "Content-Type" : [ "text/plain;charset=UTF-8" ],
+          "Date" : [ "Wed, 18 Dec 2019 06:15:19 GMT" ],
+          "Hoverfly" : [ "Was-Here" ]
+        }
+      }
+    }, {
+      "request" : {
+        "path" : [ {
+          "matcher" : "exact",
+          "value" : "/audit/withdraw/1.0000000000005E15"
+        } ],
+        "method" : [ {
+          "matcher" : "exact",
+          "value" : "GET"
+        } ],
+        "destination" : [ {
+          "matcher" : "exact",
+          "value" : "localhost:6001"
+        } ],
+        "scheme" : [ {
+          "matcher" : "exact",
+          "value" : "http"
+        } ],
+        "body" : [ {
+          "matcher" : "exact",
+          "value" : ""
+        } ]
+      },
+      "response" : {
+        "status" : 200,
+        "body" : "withdraw failed",
+        "encodedBody" : false,
+        "templated" : false,
+        "headers" : {
+          "Content-Disposition" : [ "inline;filename=f.txt" ],
+          "Content-Length" : [ "15" ],
+          "Content-Type" : [ "text/plain;charset=UTF-8" ],
+          "Date" : [ "Wed, 18 Dec 2019 06:15:19 GMT" ],
+          "Hoverfly" : [ "Was-Here" ]
+        }
+      }
+    }, {
+      "request" : {
+        "path" : [ {
+          "matcher" : "exact",
+          "value" : "/audit/withdraw/1000750.0"
+        } ],
+        "method" : [ {
+          "matcher" : "exact",
+          "value" : "GET"
+        } ],
+        "destination" : [ {
+          "matcher" : "exact",
+          "value" : "localhost:6001"
+        } ],
+        "scheme" : [ {
+          "matcher" : "exact",
+          "value" : "http"
+        } ],
+        "body" : [ {
+          "matcher" : "exact",
+          "value" : ""
+        } ]
+      },
+      "response" : {
+        "status" : 200,
+        "body" : "withdraw success",
+        "encodedBody" : false,
+        "templated" : false,
+        "headers" : {
+          "Content-Disposition" : [ "inline;filename=f.txt" ],
+          "Content-Length" : [ "16" ],
+          "Content-Type" : [ "text/plain;charset=UTF-8" ],
+          "Date" : [ "Wed, 18 Dec 2019 06:15:20 GMT" ],
+          "Hoverfly" : [ "Was-Here" ]
+        }
+      }
+    } ],
+    "globalActions" : {
+      "delays" : [ ]
+    }
+  },
+  "meta" : {
+    "schemaVersion" : "v5",
+    "hoverflyVersion" : "v1.1.1",
+    "timeExported" : "2019-12-18T01:15:25-05:00"
+  }
+}

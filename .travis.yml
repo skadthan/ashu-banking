@@ -1,0 +1,19 @@
+language: java
+sudo: false # faster builds
+
+script: "mvn cobertura:cobertura"
+
+jdk:
+  - oraclejdk8
+script: mvn clean install
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN # Token generated in "GITHUB>Settings>DeveloperSettings>PersonalAccessTokens" is placed in Environment variable(GITHUB_TOKEN) mentioned in TravisCI
+  local_dir: target
+  on:
+    branch: master
