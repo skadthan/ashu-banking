@@ -2,7 +2,7 @@ pipeline {
     agent any
 	tools { 
           maven '3.8.4'
-	   jdk 'OpenJDK9' 
+	   jdk 'OpenJDK12' 
       }
   /*  parameters {
         string(name: 'MYSQL_ROOT_PASSWORD', defaultValue: 'root', description: 'MySQL password')
