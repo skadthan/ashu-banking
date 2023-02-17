@@ -10,7 +10,7 @@ FROM puckel/docker-airflow:1.10.9
 USER root
 RUN echo "deb http://security.debian.org/debian-security stretch/updates main" >> /etc/apt/sources.list                                                   
 RUN mkdir -p /usr/share/man/man1
-RUN apt-get update -y
+#RUN apt-get update -y
 RUN apt-get install -y openjdk-8-jdk
 
 RUN apt-get install unzip -y
