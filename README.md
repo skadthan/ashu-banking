@@ -76,4 +76,4 @@ docker run --detach -v /var/run/docker.sock:/var/run/docker.sock -v $(which dock
  * Run the job to build and deploy the application
 
 ###### Debug H2 DB while testing
- * Set a debug point in any test step and check the URL "http://localhost:8800/console" while testing
+ * Set a debug point in any test step and check the URL "http://localhost:8800/console" while testing;
