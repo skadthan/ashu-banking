@@ -1,4 +1,4 @@
-#FROM java:8 
+FROM java:8 
 #FROM openjdk
 FROM maven
 
@@ -18,4 +18,4 @@ ADD src /code/src
 RUN ["mvn", "package", "-DskipTests"]
 
 EXPOSE 8080
-CMD ["java", "--add-opens=java.base/java.lang=ALL-UNNAMED", "-jar", "target/ashu-banking-0.0.1-SNAPSHOT.jar"]
+CMD ["java", "-jar", "target/ashu-banking-0.0.1-SNAPSHOT.jar"]
