@@ -18,5 +18,6 @@ ADD pom.xml /code/pom.xml
 ADD src /code/src
 RUN ["mvn", "package", "-DskipTests"]
 
+CMD ["java", "-version"]
 EXPOSE 8080
 CMD ["java", "-jar", "target/ashu-banking-0.0.1-SNAPSHOT.jar"]
