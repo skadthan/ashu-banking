@@ -30,7 +30,7 @@ pipeline {
         stage('Execute Tests'){
             steps {
                 echo 'Testing'
-                sh 'mvn test'
+                sh 'mvn clean test'
             }
         }
         stage('Code Quality Check'){
