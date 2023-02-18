@@ -18,6 +18,7 @@ pipeline {
                 sh "echo M2_HOME= ${M2_HOME}"
                 sh "/usr/local/bin/docker -v"
                 sh "docker -v"
+		sh "java -version"
          }
         }
         stage('Download Code') {
