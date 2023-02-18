@@ -34,6 +34,9 @@ pipeline {
             }
         }
         stage('Code Quality Check'){
+	   tools {
+      		jdk "OpenJDK12" // the name you have given the JDK installation in Global Tool Configuration
+  		}
             steps {
                 echo 'Sonar code quality check'
                 sh 'mvn sonar:sonar -Dsonar.host.url=http://localhost:9000 -Dsonar.login=admin -Dsonar.password=abcd123'
