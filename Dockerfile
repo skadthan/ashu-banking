@@ -1,9 +1,10 @@
 #FROM java:8 
 #FROM openjdk
 
-#FROM maven
+
 #FROM openjdk:8u181-jdk
 FROM maven:3.6.3-jdk-8
+FROM maven
 
 ## Install maven
 #RUN apt-get update
