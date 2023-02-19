@@ -30,7 +30,7 @@ pipeline {
         stage('Execute Tests'){
             steps {
                 echo 'Testing'
-                //sh 'mvn clean test'
+                sh 'mvn clean test'
             }
         }
         stage('Code Quality Check'){
@@ -46,7 +46,7 @@ pipeline {
             steps {
                 echo 'Building...'
                 //sh 'mvn install -Dmaven.test.skip=true'
-		  sh 'mvn install test'
+		  sh 'mvn install'
             }
         }
         stage('Build and Upload Docker Image') {
