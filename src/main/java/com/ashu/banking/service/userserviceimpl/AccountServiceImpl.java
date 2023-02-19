@@ -109,7 +109,7 @@ public class AccountServiceImpl implements AccountService {
             PrimaryTransaction primaryTransaction = new PrimaryTransaction(date, "Deposit to Primary Account", "Account", "Finished", amount, primaryAccount.getAccountBalance(), primaryAccount);
             transactionService.savePrimaryDepositTransaction(primaryTransaction);
 
-            callBofaDeposit(amount);
+           // callBofaDeposit(amount);
             
         } else if (accountType.equalsIgnoreCase("Savings")) {
             SavingsAccount savingsAccount = user.getSavingsAccount();
@@ -120,7 +120,7 @@ public class AccountServiceImpl implements AccountService {
             SavingsTransaction savingsTransaction = new SavingsTransaction(date, "Deposit to savings Account", "Account", "Finished", amount, savingsAccount.getAccountBalance(), savingsAccount);
             transactionService.saveSavingsDepositTransaction(savingsTransaction);
 
-            callBofaDeposit(amount);
+           // callBofaDeposit(amount);
         }
         L.debug("End : AccountServiceImpl.deposit(...) : accountType = {}, amount = {}", accountType, amount);
     }
@@ -138,7 +138,7 @@ public class AccountServiceImpl implements AccountService {
 
             PrimaryTransaction primaryTransaction = new PrimaryTransaction(date, "Withdraw from Primary Account", "Account", "Finished", amount, primaryAccount.getAccountBalance(), primaryAccount);
             transactionService.savePrimaryWithdrawTransaction(primaryTransaction);
-            callBofaWithdraw(amount);
+           // callBofaWithdraw(amount);
         } else if (accountType.equalsIgnoreCase("Savings")) {
             SavingsAccount savingsAccount = user.getSavingsAccount();
             savingsAccount.setAccountBalance(savingsAccount.getAccountBalance().subtract(new BigDecimal(amount)));
@@ -147,7 +147,7 @@ public class AccountServiceImpl implements AccountService {
             Date date = new Date();
             SavingsTransaction savingsTransaction = new SavingsTransaction(date, "Withdraw from savings Account", "Account", "Finished", amount, savingsAccount.getAccountBalance(), savingsAccount);
             transactionService.saveSavingsWithdrawTransaction(savingsTransaction);
-            callBofaWithdraw(amount);
+           // callBofaWithdraw(amount);
         }
         L.debug("End : AccountServiceImpl.withdraw(...) : accountType = {}, amount = {}", accountType, amount);
     }
