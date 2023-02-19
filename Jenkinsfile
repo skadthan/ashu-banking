@@ -62,7 +62,7 @@ pipeline {
                 '''
             }
         }
-       stage('Create Database') {
+    /*   stage('Create Database') {
             steps {
                 echo 'Running Database Image'
 /* Commented as MySQL is replaced by H2
