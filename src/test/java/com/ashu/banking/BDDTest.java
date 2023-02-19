@@ -18,7 +18,7 @@ import io.specto.hoverfly.junit.rule.HoverflyRule;
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "classpath:features"
         , tags = {"@Regression"}
-        , glue={"com.synechron.onlineacc.stepdef"}
+        , glue={"com.ashu.banking.stepdef"}
 		, plugin = { "pretty", "html:target/cucumber/cucumber-html-report", "json:target/cucumber/cucumber.json",
 				"junit:target/cucumber/cucumber.xml",
 				"com.cucumber.listener.ExtentCucumberFormatter:target/extent-report.html" })
